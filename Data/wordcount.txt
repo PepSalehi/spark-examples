@@ -1,0 +1,3 @@
+Hadoop is cool
+Hadoop is fast
+Hadoop is easy
