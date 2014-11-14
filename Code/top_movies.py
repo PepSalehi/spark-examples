@@ -16,7 +16,7 @@ def extractMovie(line):
     return (id, name)
 
 #Create Spark Context with the master details and the application name
-sc = SparkContext("spark://bigdata-vm:7077", "max_temperature")
+sc = SparkContext("spark://localhost:7077", "max_temperature")
 
 #Create an RDD from the input data in HDFS
 movie = sc.textFile("hdfs://localhost:9000/user/bigdatavm/input/movie/movie.txt")

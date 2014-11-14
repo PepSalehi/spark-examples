@@ -4,7 +4,7 @@ import sys
 from pyspark import SparkContext
 
 #Create Spark Context with the master details and the application name
-sc = SparkContext("spark://bigdata-vm:7077", "max_temperature")
+sc = SparkContext("spark://localhost:7077", "max_temperature")
 
 #define the accumulator
 validRecordsAccumulator = sc.accumulator(0)

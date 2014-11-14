@@ -4,7 +4,7 @@ import sys
 from pyspark import SparkContext
 
 #Create Spark Context with the master details and the application name
-sc = SparkContext("spark://bigdata-vm:7077", "max_temperature")
+sc = SparkContext("spark://localhost:7077", "max_temperature")
 
 #Add a file to be downloaded with this Spark job on every node.
 sc.addFile("/home/bigdatavm/Code/Spark/filter_weather_records.rb")

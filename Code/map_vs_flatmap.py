@@ -1,7 +1,7 @@
 from pyspark import SparkContext
 
 
-sc = SparkContext("spark://bigdata-vm:7077", "Map")
+sc = SparkContext("spark://localhost:7077", "Map")
 lines = sc.parallelize(["hello world", "hi"])
 
 wordsWithMap = lines.map(lambda line: line.split(" ")).coalesce(1)
